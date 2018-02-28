@@ -1,0 +1,42 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  background-color: #ffffff;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: tomato;
+}
+
+a:hover {
+  color: #333;
+}
+
+#main_arena{
+  display: flex;
+  margin-top: 38vh;
+  margin-right: 16%;
+  margin-left: 16%;
+  position: relative;
+}
+
+#cup1, #cup2, #cup3{
+  margin-left: 10%;
+  border-color: black;
+}
+
+#ball {
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+}
