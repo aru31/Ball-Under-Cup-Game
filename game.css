@@ -18,6 +18,10 @@ a:hover {
   color: #333;
 }
 
+#timer{
+  visibility: hidden;
+}
+
 #main_arena{
   display: flex;
   margin-top: 38vh;
