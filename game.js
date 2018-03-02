@@ -78,7 +78,7 @@ var parent2 = $("#cup-o-"+right).parent().attr('id');
 
          if(i==21){
               clearInterval(timer);
-              alert("Which of the cup do you think has the ball...Click on the glass");
+              alert("Which of the cup do you think has the ball...Still Do look carefully");
          }
 
  i++;
