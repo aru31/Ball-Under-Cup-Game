@@ -1,5 +1,5 @@
 //jquery easing effect plugin
-jQuery.easing.easeeffectplugin = function (x, t, b, c, d) {
+jQuery.easing.easeeffectplugin = (x, t, b, c, d) => {
 if ((t/=d) < (1/2.75)) {
 return c*(7.5625*t*t) + b;
 } else if (t < (2/2.75)) {
@@ -23,7 +23,7 @@ var ran =0;
 var message = document.getElementById('message');
 
 
-$(document).ready(function(){
+$(document).ready(() => {
     $('#btnShow').click(function start(){
 
       message.innerHTML = "Starting the Game....";
@@ -76,7 +76,7 @@ var parent2 = $("#cup-o-"+right).parent().attr('id');
 
          var timer = setTimeout(function() { play() },450);
 
-         if(i==21){
+         if(i===21){
               clearInterval(timer);
               alert("Which of the cup do you think has the ball...Still Do look carefully");
          }
@@ -86,21 +86,21 @@ x=1;
        });
 
   
- $("#cup-o-2").on("click", function(){
+ $("#cup-o-2").on("click", () => {
   if(x==1){
     alert("Mr Arpit says u won....");
   }
 });
 
-$("#cup-o-1").on("click", function(){
+$("#cup-o-1").on("click", () => {
   if(x==1){
-    alert("Mr Arpit says u Fucked up....");
+    alert("Mr Arpit says u lost....");
   }
 });
 
-$("#cup-o-3").on("click", function(){
+$("#cup-o-3").on("click", () => {
   if(x==1){
-    alert("Mr Arpit says u Fucked up....");
+    alert("Mr Arpit says u lost....");
   }
 });
 
